@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/wicameraii/!svn/ver/1597/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO
+END
+GEOAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/230/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/GEOAddress.java
+END
+GEODBAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/wicameraii/!svn/ver/1593/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/GEODBAdapter.java
+END
+GEODebug.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1224/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/GEODebug.java
+END
+CoordinateMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/wicameraii/!svn/ver/844/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/CoordinateMap.java
+END
+GEOCoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1597/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/GEOCoder.java
+END
+GeoParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1597/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/GeoParser.java
+END
+GEOCacheHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/wicameraii/!svn/ver/1593/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GEO/GEOCacheHelper.java
+END

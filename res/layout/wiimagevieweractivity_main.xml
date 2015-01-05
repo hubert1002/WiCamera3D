@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/imageviewer_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/imageview_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+        
+        
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/imageview_relativelayout_control"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/top_bar_portrait"/>
+        <TextView
+            android:id="@+id/tx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:textSize="22sp"
+            android:text="@string/imageview_title" />
+<!-- 视屏播放触发 -->
+    <!--     <Button
+            android:id="@+id/imageview_play_video"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/popup_transparent"
+            android:textSize="12dip" /> -->
+        
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gallery_more_btn_selector" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/button1"
+            android:background="@drawable/gallery_camera_btn_selector"
+             />
+                <com.wistron.StereoUI.SlideButton
+            android:id="@+id/toggleButtonDimension"
+            android:layout_width="133px"
+            android:layout_height="78px"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/button2" />
+                
+    </RelativeLayout>
+    <!--用来放置播放按钮  -->  
+    <RelativeLayout
+        android:id="@+id/playbutton_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+  <!-- 视屏播放触发 -->
+        <Button
+            android:id="@+id/imageview_play_video"
+            android:layout_width="140px"
+            android:layout_height="135px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/video_review_icon"
+            android:visibility="gone"
+            android:textSize="12dip"
+            /> 
+        
+    </RelativeLayout>   
+        
+        
+        
+        
+<!--存放菜单的layout  -->
+ <RelativeLayout 
+        android:id="@+id/MenuLayout"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        >
+  <RelativeLayout 
+        android:id="@+id/moreMenuLayout"
+        android:layout_width="400px"
+    	android:layout_height="550px"
+    	 android:layout_alignParentRight="true"
+    	 android:layout_marginTop="78px"
+       android:paddingBottom="5px"
+        android:paddingLeft="4px"
+        android:paddingRight="4px"
+        android:paddingTop="5px"
+		android:background="@drawable/main_menu_window_portrait"
+        >
+        
+    
+        <TextView 
+        android:id="@+id/listtitle"
+        android:layout_width="fill_parent"
+    	android:layout_height="50px"
+    	android:gravity="center"
+    	android:textSize="24px"
+    	android:textColor="@color/white"
+    	android:text="@string/gallery_menu_item_more"
+            />
+    
+    
+      <ListView
+        android:id="@+id/moreListView"
+        android:layout_below="@+id/listtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:padding="5px"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1px"
+        android:background="@drawable/menu_bg_transparent_selector"
+        />
+        
+        <!--子菜单  -->
+        
+          <RelativeLayout 
+        android:id="@+id/subMenuLayout"
+        android:layout_width="283px"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_below="@+id/listtitle"
+        >
+  
+        
+        <ListView
+        android:id="@+id/subListView"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:layout_below="@+id/listtitle"
+        android:layout_width="283px"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5px"
+        android:paddingTop="53px"
+		android:paddingBottom="5px"
+		android:paddingRight="5px"  
+        android:background="@drawable/main_menu_window_portrait"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1px"
+        />
+              <TextView 
+        android:id="@+id/subListTitle"
+        android:layout_width="283px"
+    	android:layout_height="53px"
+    	android:gravity="center"
+    	android:textColor="@color/white"
+    	android:textSize="24px"
+            />
+        
+  </RelativeLayout>
+        
+</RelativeLayout>
+</RelativeLayout>
+   
+      
+      
+    <!--用来放置弹出项  -->  
+    <RelativeLayout
+        android:id="@+id/popup_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+ 
+        
+    </RelativeLayout>
+      
+</RelativeLayout>

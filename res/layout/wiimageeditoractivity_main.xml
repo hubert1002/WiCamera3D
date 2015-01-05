@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/relativelayout_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <com.wistron.WiEditor.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/imageview_relativelayout_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" 
+        android:clickable="false"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/top_bar_portrait" />
+
+        <TextView
+            android:id="@+id/tx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="@string/wieditor_title"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button_execute"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gallery_group_execute_btn_selector" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/button_execute"
+            android:background="@drawable/gallery_group_cancel_btn_selector" />
+
+
+    </RelativeLayout>
+    
+</RelativeLayout>

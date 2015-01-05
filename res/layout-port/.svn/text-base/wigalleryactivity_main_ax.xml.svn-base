@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayoutBase"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGLContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/absoluteLayoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <ImageView
+            android:id="@+id/imageViewTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="0px"
+            android:background="@drawable/top_bar"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/textViewGalleryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="24px"
+            android:text="@string/gallery_title"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+        
+        <com.wistron.StereoUI.SlideButton
+            android:id="@+id/toggleButtonDimension"
+            android:layout_width="133px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="135px"
+            android:layout_marginTop="10px" />
+
+
+        <Button
+            android:id="@+id/buttonCamera"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="70px"
+            android:layout_marginTop="10px"
+            android:text=""
+            android:background="@drawable/gallery_camera_btn_selector" />
+        
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="70px"
+            android:layout_marginTop="10px"
+            android:visibility="gone"
+            android:background="@drawable/gallery_group_cancel_btn_selector" />
+
+        <ToggleButton
+            android:id="@+id/buttonMore"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/gallery_more_btn_selector"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+        
+        <Button
+            android:id="@+id/buttonExecute"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="10px"
+            android:visibility="gone"
+            android:background="@drawable/gallery_group_execute_btn_selector" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="146px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="90px"
+            android:gravity="center"
+            android:background="@drawable/group_date_indicator_base"
+            android:text="XXXX-XX-XX"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/seekBarScrollPage"
+            android:layout_width="159dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:maxHeight="25dp"
+            android:minHeight="6dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:progressDrawable="@drawable/group_image_preview_indicator"
+            android:thumb="@drawable/group_image_preview_indicator_button_selector"
+            android:thumbOffset="5dp" />
+
+         <!-- 喜好计数器 -->
+        <RelativeLayout
+            android:id="@+id/favoriteLayout"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="83px"
+            android:background="@drawable/favorite_icon"
+            android:visibility="invisible" >
+        
+            <TextView
+                android:id="@+id/textViewFavoriteNumber"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:layout_alignParentTop="true"
+            	android:layout_marginTop="30px"
+            	android:text="0"
+            	android:textSize="16sp"
+            	android:textColor="@color/white"
+            	android:visibility="invisible"
+            />
+        </RelativeLayout>
+        
+        <!-- 未知计数器 -->
+        <RelativeLayout
+            android:id="@+id/unknownLayout"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45px"
+            android:layout_marginBottom="45px"
+            android:background="@drawable/unknown_icon"
+            android:visibility="invisible" >
+        
+            <TextView
+                android:id="@+id/textViewUnknownNumber"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:layout_alignParentTop="true"
+            	android:layout_marginTop="30px"
+            	android:text="0"
+            	android:textSize="16sp"
+            	android:textColor="@color/white"
+            	android:visibility="invisible"
+            />
+        </RelativeLayout>
+        
+        <!-- 存放菜单的layout -->
+
+        <RelativeLayout
+            android:id="@+id/moreMenuLayout"
+            android:layout_width="400px"
+            android:layout_height="550px"
+            android:layout_alignRight="@+id/buttonMore"
+            android:layout_below="@+id/buttonMore"
+            android:background="@drawable/main_menu_window_portrait"
+            android:paddingBottom="15px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:paddingTop="15px"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/listtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/gallery_menu_item_more"
+                android:textSize="24px" />
+
+            <ListView
+                android:id="@+id/moreListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/listtitle"
+                android:padding="0px" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/subMenuLayout"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/listtitle"
+                android:visibility="invisible" >
+
+                <ListView
+                    android:id="@+id/subListView"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/listtitle"
+                    android:background="@drawable/main_menu_window_portrait"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="5px"
+                    android:paddingRight="15px"
+                    android:paddingTop="50px" >
+                </ListView>
+                <TextView
+                    android:id="@+id/subListTitle"
+                    android:textColor="@color/white"
+                    android:layout_width="300px"
+                    android:layout_height="50px"
+                    android:gravity="center"
+                    android:textSize="24px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

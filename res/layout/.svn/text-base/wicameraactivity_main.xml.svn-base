@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_camera_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="0dip"
+    android:layout_marginTop="0dip"
+    android:layout_x="0dip"
+    android:layout_y="0dip" >
+
+    <RelativeLayout
+        android:id="@+id/al_camera_surface_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_x="0dip"
+        android:layout_y="0dip" >
+
+        <RelativeLayout
+            android:id="@+id/surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip" />
+
+        <ImageView
+            android:id="@+id/iv_over"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip" />
+
+        <com.wistron.WiCamera.AuxiliaryLine
+            android:id="@+id/aul_camera_auxiliaryline"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip" />
+
+        <ImageView
+            android:id="@+id/iv_camera_focus"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:layout_x="10dip"
+            android:layout_y="10dip"
+            android:background="@drawable/camera_focus"
+            android:visibility="gone" />
+
+        <com.wistron.WiCamera.FaceIndicater
+            android:id="@+id/fi_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/iv_camera_focus"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/iv_camera_focus"
+            android:visibility="gone" />
+
+        <Chronometer
+            android:id="@+id/ch_camera_time_count"
+            android:layout_width="50dip"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/fi_face"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/fi_face"
+            android:layout_x="10dip"
+            android:layout_y="10dip"
+            android:visibility="gone" />
+
+        <Chronometer
+            android:id="@+id/ch_camera_time_count1"
+            android:layout_width="50dip"
+            android:layout_height="30dip"
+            android:layout_alignTop="@+id/fi_face"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/fi_face"
+            android:layout_x="10dip"
+            android:layout_y="10dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/al_camera_overlay_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_x="0dip"
+        android:layout_y="0dip" >
+
+        <!-- 左边悬浮控件 -->
+
+        <ToggleButton
+            android:id="@+id/btn_camera_setting"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:layout_x="10dip"
+            android:layout_y="10dip"
+            android:background="@drawable/camera_setting_btn_landscape_selecter"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_used_camera"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_below="@+id/btn_camera_setting"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:layout_x="10dip"
+            android:layout_y="80dip"
+            android:background="@drawable/camera_switch_btn_landscape_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_flashmode"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_below="@+id/btn_camera_used_camera"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:background="@drawable/camera_flash_btn_autotoon_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <RelativeLayout
+            android:id="@+id/newpic_thumbnails_parent"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="5px"
+            android:layout_x="10dip"
+            android:layout_y="260dip" >
+
+            <ImageView
+                android:id="@+id/iv_camera_newpic_thumbnails"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_x="10dip"
+                android:layout_y="260dip"
+                android:background="@drawable/gray"
+                android:clickable="true"
+                android:paddingBottom="14px"
+                android:paddingLeft="14px"
+                android:paddingRight="14px"
+                android:paddingTop="14px" />
+        </RelativeLayout>
+
+        <!-- 照相时中间的悬浮控件 -->
+
+        <Button
+            android:id="@+id/btn_camera_sparepower"
+            android:layout_width="40px"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88px"
+            android:layout_marginTop="10px"
+            android:layout_x="60dip"
+            android:layout_y="10dip"
+            android:rotation="0"
+            android:textSize="12dip" />
+
+        <Button
+            android:id="@+id/btn_camera_storagemode"
+            android:layout_width="40px"
+            android:layout_height="30px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/btn_camera_sparepower"
+            android:layout_x="150dip"
+            android:layout_y="10dip"
+            android:background="@drawable/storage_sdcard"
+            android:textColor="@android:color/white"
+            android:textSize="20px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_camera_scence"
+            android:layout_width="40px"
+            android:layout_height="30px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/btn_camera_storagemode"
+            android:layout_x="260dip"
+            android:layout_y="10dip"
+            android:background="@drawable/camera_pictures"
+            android:textColor="@android:color/white"
+            android:textSize="20px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_camera_newpic_sizeOfsum"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/btn_camera_scence"
+            android:layout_x="360dip"
+            android:layout_y="10dip"
+            android:background="@color/transparent"
+            android:padding="0px"
+            android:text="10/3"
+            android:textColor="@color/white"
+            android:textSize="20px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_self_timer"
+            android:layout_width="40px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/btn_camera_newpic_sizeOfsum"
+            android:layout_x="360dip"
+            android:layout_y="10dip"
+            android:background="@drawable/popup_transparent"
+            android:gravity="center"
+            android:paddingLeft="0dip"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_camera_uiright_bg"
+            android:layout_width="204dp"
+            android:layout_height="475dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_x="510dip"
+            android:layout_y="129dip"
+            android:background="@drawable/camera_buttonround_base" />
+
+        <!--
+             <com.wistron.WiCamera.SlideButton2D3D
+            android:id="@+id/btn_camera_dimension"
+            android:layout_width="118dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="120px"
+            android:rotation="-57" />
+        -->
+
+
+        <!-- 照相录像切换按钮的背景内的图标 -->
+
+        <ImageView
+            android:id="@+id/slide_bg_camera_icon"
+            android:layout_width="30px"
+            android:layout_height="24px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_camera_capture"
+            android:layout_marginRight="115px"
+            android:layout_marginTop="13px"
+            android:src="@drawable/slide_bg_camera_icon" />
+
+        <ImageView
+            android:id="@+id/slide_bg_record_icon"
+            android:layout_width="31px"
+            android:layout_height="15px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_camera_capture"
+            android:layout_marginRight="79px"
+            android:layout_marginTop="70px"
+            android:src="@drawable/slide_bg_record_icon" />
+
+        <ImageView
+            android:id="@+id/slide_bg_2d_icon"
+            android:layout_width="32px"
+            android:layout_height="17px"
+            android:layout_above="@+id/btn_camera_capture"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="70px"
+            android:layout_marginRight="81px"
+            android:src="@drawable/slide_bg_2d_icon" />
+
+        <ImageView
+            android:id="@+id/slide_bg_3d_icon"
+            android:layout_width="33px"
+            android:layout_height="17px"
+            android:layout_above="@+id/btn_camera_capture"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15px"
+            android:layout_marginRight="115px"
+            android:src="@drawable/slide_bg_3d_icon" />
+        <!-- 照相录像切换按钮 -->
+
+        <com.wistron.WiCamera.SlideButton
+            android:id="@+id/btn_camera_captureorreocord"
+            android:layout_width="118dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_camera_capture"
+            android:layout_marginRight="-7px"
+            android:layout_marginTop="20px"
+            android:rotation="-125" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_capture"
+            android:layout_width="112px"
+            android:layout_height="112px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/capture_button_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_panoramic"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="81px"
+            android:layout_marginRight="169px"
+            android:background="@drawable/panorama_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_continuous"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14px"
+            android:layout_marginRight="128px"
+            android:background="@drawable/burst_btn_3num_selecter"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <!-- 全景布局 -->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_panorama_sparepower"
+            android:layout_width="40px"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="5px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="640dip"
+            android:layout_height="200dip"
+            android:layout_centerInParent="true" />
+        <!-- 放置进度条和左右指示器 -->
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/panoprogress_relativelayout"
+            android:layout_width="424px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="140px" >
+
+            <ImageView
+                android:id="@+id/panoprogressleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/panoramaprogressIndicator"
+                android:background="@drawable/l_arrow_disappear" />
+
+            <com.wistron.WiCamera.WiPanorama.PanoramaProgressIndicator
+                android:id="@+id/panoramaprogressIndicator"
+                android:layout_width="350px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/panoprogressright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/panoramaprogressIndicator"
+                android:background="@drawable/r_arrow_disappear" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shenma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="112px"
+            android:layout_height="112px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/panorama_stop_click"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- 存放菜单的layout -->
+
+    <RelativeLayout
+        android:id="@+id/menulayout"
+        android:layout_width="400px"
+        android:layout_height="520px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="33px"
+        android:background="@drawable/main_menu_window_portrait"
+        android:paddingBottom="5px"
+        android:paddingLeft="4px"
+        android:paddingRight="4px"
+        android:paddingTop="5px"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/listtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:gravity="center"
+            android:text="@string/camera_setting"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <ListView
+            android:id="@+id/mainlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/listtitle"
+            android:divider="@color/lightgray"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:padding="5px"
+            android:scrollingCache="false" />
+
+        <RelativeLayout
+            android:id="@+id/submenulayout"
+            android:layout_width="283px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/listtitle" >
+
+            <ListView
+                android:id="@+id/sublistview"
+                android:layout_width="283px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_window_portrait"
+                android:divider="@color/lightgray"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:paddingBottom="10px"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:paddingTop="60px"
+                android:scrollingCache="false" />
+
+            <TextView
+                android:id="@+id/sublisttitle"
+                android:layout_width="283px"
+                android:layout_height="60px"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <!-- 曝光进度条 -->
+
+            <ImageView
+                android:id="@+id/exposure_icon_left"
+                android:layout_width="27px"
+                android:layout_height="27px"
+                android:layout_below="@+id/sublisttitle"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/exposure_small_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/exposure_icon_right"
+                android:layout_width="27px"
+                android:layout_height="27px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sublisttitle"
+                android:layout_marginRight="18px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/exposure_small_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/exposure_bg"
+                android:layout_width="257px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sublisttitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="0px"
+                android:layout_marginTop="12px"
+                android:background="@drawable/exposure_slider_bar_with_number"
+                android:visibility="invisible" />
+
+            <SeekBar
+                android:id="@+id/exposure"
+                android:layout_width="257px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sublisttitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="34dp"
+                android:paddingBottom="6px"
+                android:paddingLeft="2px"
+                android:paddingRight="2px"
+                android:paddingTop="6px"
+                android:progressDrawable="@drawable/exposure_slider_bar_no_number"
+                android:thumb="@drawable/scrolling_button_selector"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- review的布局 -->
+
+    <RelativeLayout
+        android:id="@+id/al_camera_review_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_camera_review_thumbnails"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:layout_x="0dip"
+            android:layout_y="0dip"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/al_camera_review_ui_wiimageview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:layout_x="0dip"
+            android:layout_y="0dip" >
+        </RelativeLayout>
+
+        <ToggleButton
+            android:id="@+id/btn_camera_review_delete"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="353px"
+            android:layout_marginTop="5px"
+            android:layout_x="300dip"
+            android:layout_y="20dip"
+            android:background="@drawable/delete_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_review_share"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="253px"
+            android:layout_marginTop="5px"
+            android:layout_x="350dip"
+            android:layout_y="20dip"
+            android:background="@drawable/share_btn_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_review_information"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="151px"
+            android:layout_marginTop="5px"
+            android:layout_x="400dip"
+            android:layout_y="20dip"
+            android:background="@drawable/detail_info_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <Button
+            android:id="@+id/btn_camera_review_tocamera"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="5px"
+            android:layout_x="450dip"
+            android:layout_y="20dip"
+            android:background="@drawable/camera_btn_selecter"
+            android:textSize="12dip" />
+
+        <RelativeLayout
+            android:id="@+id/btn_camera_review_play_videoparent"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerInParent="true" >
+
+            <Button
+                android:id="@+id/btn_camera_review_play_video"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_centerInParent="true"
+                android:layout_x="300dip"
+                android:layout_y="200dip"
+                android:background="@drawable/video_review_icon"
+                android:textSize="12dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

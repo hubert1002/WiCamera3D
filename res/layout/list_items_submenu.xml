@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listItemlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/camera_menu_selecter"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/HeadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="52px"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/Content"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="55px"
+        android:layout_toRightOf="@+id/HeadImage"
+       	android:gravity="center_vertical"
+       	android:textColor="@drawable/textcolor_selector_white"
+       	android:focusable="false"
+		android:clickable="false"
+        android:textSize="22px"/>
+
+    <RadioButton
+        android:id="@+id/rbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="0px"
+        android:button="@drawable/radiobutton_selecter"
+        android:clickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerVertical="true"
+        android:padding="0px"
+        android:gravity="center"
+     
+         />
+
+</RelativeLayout>

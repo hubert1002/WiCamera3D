@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/wicameraii/!svn/ver/1700/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor
+END
+OnDoneCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/OnDoneCallback.java
+END
+RedEyeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/RedEyeFilter.java
+END
+PhotoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/wicameraii/!svn/ver/870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/PhotoView.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/wicameraii/!svn/ver/1329/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/Filter.java
+END
+WiImageEditorActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/wicameraii/!svn/ver/1700/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/WiImageEditorActivity.java
+END
+RendererUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1548/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/RendererUtils.java
+END
+Photo.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/wicameraii/!svn/ver/870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/Photo.java
+END
+FilterStack.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1380/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/FilterStack.java
+END
+OnDoneBitmapCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/wicameraii/!svn/ver/870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiEditor/OnDoneBitmapCallback.java
+END

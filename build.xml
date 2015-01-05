@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="WiCamera3DII" default="help">
+	<!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked into
+         Version Control Systems. -->
+	<property name="project.src.encoding" value="UTF-8" />
+	<loadproperties srcFile="local.properties" />
+	<loadproperties srcFile="project.properties" />
+	<property file="ant.properties" />
+	<property name="project.classes" value="bin/classes" />
+	<property name="project.jar" value="libs" />
+	<property name="sdk.dir" value="/home/swpc/workspaces-IT/Tools/android-sdk-linux" />
+	<property name="out.folder" value="/home/swpc/workspaces-IT/Project" />
+	<property name="findbugs.home" value="/home/swpc/workspaces-IT/Tools/findbugs-2.0.0-rc1" />
+	<!-- Sign apk -->
+	<property name="key.store" value="key.store" />
+	<property name="key.store.password" value="android-swpc" />
+	<property name="key.alias" value="android-wits-key" />
+	<property name="key.alias.password" value="android-swpc" />
+	<property name="has.keystore" value="true" />
+	<fileset dir="${project.jar}" includes="*.jar" />
+
+	<!-- findbugs -->
+	<path id="fundbugs_lib">
+		<fileset dir="${findbugs.home}">
+			<include name="lib/*.jar" />
+		</fileset>
+	</path>
+	<!-- checkstyle -->
+	<property name="checkstyle.home" value="/home/swpc/workspaces-IT/Tools/checkstyle-5.5" />
+
+	
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" classpathref="fundbugs_lib" />
+	<taskdef resource="checkstyletask.properties" classpath="${checkstyle.home}/checkstyle-5.5-all.jar" />
+
+	<!-- This runs -package-release and -release-nosign first and then runs
+         only if release-sign is true (set in -release-check,
+         called by -release-no-sign)-->
+	<target name="release" depends="-set-release-mode, -release-obfuscation-check, -package, -release-prompt-for-password, -release-nosign" if="has.keystore" description="Builds the application. The generated apk file must be signed before
+                            it is published.">
+		<!-- only create apk if *not* a library project -->
+		<do-only-if-not-library elseText="Library project: do not create apk...">
+			<sequential>
+				<property name="out.unaligned.file" location="${out.absolute.dir}/${ant.project.name}-release-unaligned.apk" />
+				<!-- Signs the APK -->
+				<echo>Signing final apk...</echo>
+				<signjar jar="${out.packaged.file}" signedjar="${out.unaligned.file}" keystore="${key.store}" storepass="${key.store.password}" alias="${key.alias}" keypass="${key.alias.password}" verbose="${verbose}" />
+				<!-- Zip aligns the APK -->
+				<zipalign-helper in.package="${out.unaligned.file}" out.package="${out.final.file}" />
+				<echo>Release Package: ${out.final.file}</echo>
+			</sequential>
+			<mkdir dir="${out.folder}" />
+			<tstamp>
+				<format property="NOW.TIMESTAMP" pattern="yyyy-MM-dd-hhmm" locale="zh,CN" />
+			</tstamp>
+			<move file="${out.final.file}" tofile="${out.folder}/${ant.project.name}/${ant.project.name}-${NOW.TIMESTAMP}.apk" />
+			<echo>move file to ${out.folder}\${ant.project.name}\${ant.project.name}-${NOW.TIMESTAMP}.apk</echo>
+		</do-only-if-not-library>
+		<record-build-info />
+	</target>
+
+	<!-- findbugs -->
+	<target name="findbugs">
+		<findbugs home="${findbugs.home}" output="xml:withMessages" outputFile="findbugs_report.xml" failOnError="true">
+			<sourcePath path="src" />
+			<class location="${project.classes}" /> 
+		</findbugs>
+	</target>
+
+	<!-- checkstyle -->
+	<!-- <checkstyle config="${checkstyle.home}/sun_checks.xml" -->
+	<target name="checkstyle" description="Generates a report of code convention violations.">
+		<checkstyle config="${checkstyle.home}/android_checks.xml" failureProperty="checkstyle.failure" failOnViolation="false">
+			<formatter type="xml" tofile="checkstyle_report.xml" />
+			<!-- <fileset dir="src" includes="**/*.java"/> -->
+			<fileset dir="src">
+				<include name="**/*.java"/>
+				<exclude name="**/R.java"/>
+			</fileset>
+		</checkstyle>
+	</target>
+
+
+	<!-- version-tag: 1 -->
+	<import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

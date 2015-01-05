@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/camera_menu_selecter"
+   	android:descendantFocusability="blocksDescendants"
+     >
+
+    <ImageView 
+        android:id="@+id/videoPlayerMenuIcon"
+        android:layout_width="52px"
+        android:layout_height="52px"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5px"
+        android:layout_centerVertical="true"
+        
+        />
+    <TextView
+        android:id="@+id/videoPlayerMenuText"
+        android:layout_width="wrap_content"
+        android:layout_height="72px"
+        android:layout_toRightOf="@+id/videoPlayerMenuIcon"
+        android:gravity="center_vertical"
+        android:textSize="22px"
+        android:focusable="false"
+		android:clickable="false"
+		android:textColor="@drawable/textcolor_selector_white"
+        
+        />
+
+</RelativeLayout>

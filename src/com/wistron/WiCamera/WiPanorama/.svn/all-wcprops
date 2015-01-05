@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/wicameraii/!svn/ver/1868/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama
+END
+PanoramaProgressIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/wicameraii/!svn/ver/1162/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/PanoramaProgressIndicator.java
+END
+Storage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/1754/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/Storage.java
+END
+OrientationSensor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/wicameraii/!svn/ver/1329/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/OrientationSensor.java
+END
+MosaicFrameProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/wicameraii/!svn/ver/1868/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/MosaicFrameProcessor.java
+END
+RotateAround.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/wicameraii/!svn/ver/1196/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/RotateAround.java
+END
+Mosaic.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/wicameraii/!svn/ver/676/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/Mosaic.java
+END
+PanoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/676/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/PanoUtil.java
+END
+WiPanoramaActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/wicameraii/!svn/ver/1241/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiPanorama/WiPanoramaActivity.java
+END

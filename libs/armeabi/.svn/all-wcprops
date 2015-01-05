@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wicameraii/!svn/ver/1528/2-DevelopLib/24-Code/WiCamera3DII/libs/armeabi
+END
+libjni_wipanorama.so
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/wicameraii/!svn/ver/1473/2-DevelopLib/24-Code/WiCamera3DII/libs/armeabi/libjni_wipanorama.so
+END
+libtridef_converter_test.so
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/1279/2-DevelopLib/24-Code/WiCamera3DII/libs/armeabi/libtridef_converter_test.so
+END
+libtridef3d_sdk.so
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/wicameraii/!svn/ver/1528/2-DevelopLib/24-Code/WiCamera3DII/libs/armeabi/libtridef3d_sdk.so
+END
+libnativetest.so
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/wicameraii/!svn/ver/1344/2-DevelopLib/24-Code/WiCamera3DII/libs/armeabi/libnativetest.so
+END

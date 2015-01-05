@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/camera_menu_selecter"
+    android:descendantFocusability="blocksDescendants"
+     >
+
+    <ImageView 
+        android:id="@+id/galleryMenuIcon"
+        android:layout_width="52px"
+        android:layout_height="52px"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10px"
+        android:layout_centerVertical="true"
+        
+        />
+    <TextView
+        android:id="@+id/galleryMenuText"
+        android:layout_width="wrap_content"
+        android:layout_height="72px"
+        android:layout_toRightOf="@+id/galleryMenuIcon"
+        android:gravity="center_vertical"
+        android:textColor="@drawable/textcolor_selector_white"
+        android:focusable="false"
+		android:clickable="false"
+        android:textSize="22px"
+        
+        />
+
+</RelativeLayout>

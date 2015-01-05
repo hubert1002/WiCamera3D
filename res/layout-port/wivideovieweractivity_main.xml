@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/imageviewer_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!-- 第一层，视频的surfaceview -->
+    <RelativeLayout
+        android:id="@+id/surfaceview_relativelayout"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+          <RelativeLayout
+        android:id="@+id/surfaceview_content"
+        android:layout_centerInParent="true"  
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        </RelativeLayout>
+    </RelativeLayout>
+<!-- 第二层，控件层包括最上和最下的按钮，不包括seekbar -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/control_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="68px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/top_bar_portrait"/>
+        <TextView
+            android:id="@+id/tx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="22sp"
+            android:text="@string/videoview_title" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:background="@drawable/gallery_more_btn_selector"  />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/button1"
+             android:background="@drawable/gallery_camera_btn_selector" />
+
+                <com.wistron.StereoUI.SlideButton
+            android:id="@+id/toggleButtonDimension"
+            android:layout_width="133px"
+            android:layout_height="78px"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/button2" />
+          <Button
+            android:id="@+id/button4"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5px"
+            android:layout_toLeftOf="@+id/button5"
+            android:layout_marginRight="25px"
+            android:background="@drawable/gallery_play_btn_selector" />
+         <Button
+            android:id="@+id/button5"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5px"
+            android:background="@drawable/gallery_mute_off_btn_selector" 
+            />
+          <Button
+            android:id="@+id/button6"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button5"
+              android:layout_marginLeft="25px"
+            android:layout_marginBottom="5px"
+             android:background="@drawable/gallery_screen_narrow_btn_selector"  />
+<!-- 第3层，正常的seekbar -->
+   <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/normalseekbar_relativelayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55px"
+        android:layout_width="476px"
+        android:layout_height="98px"
+        android:paddingLeft="15px"
+        android:background="@drawable/video_play_scrolling_bar_base_portrait"
+        android:paddingTop="23px" 
+        android:layout_centerHorizontal="true"
+       >
+
+            <SeekBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="425px"
+        android:layout_height="34px"
+        android:layout_marginLeft="5px"
+        android:progressDrawable="@layout/videoviewer_normalseekbar_portrait"
+        android:thumb="@drawable/videoviewer_normalseekbar_thumb" />
+                            <TextView
+            android:id="@+id/video_during"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23px"
+            android:layout_marginBottom="12px"
+            android:textSize="16px"
+            android:text="00:00/00:00" />
+    </RelativeLayout>    
+
+
+<!-- 第4层，frameseek的seekbar -->
+     <RelativeLayout
+        android:id="@+id/frameseekbar_relativelayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64px"
+         android:layout_centerHorizontal="true"
+        android:layout_width="478px"
+        android:layout_height="160px" >
+       <!--      放置那个小的framegrid -->
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/frameseekbar_small_relativelayout"
+            android:layout_width="432px"
+            android:layout_height="68px"
+            android:background="@drawable/top_thum_base"
+            android:layout_marginLeft="23px"
+            android:paddingLeft="12px"
+            android:paddingRight="15px"
+            android:paddingTop="4px" 
+            >
+                        <Gallery
+                android:id="@+id/Gridview01"
+                android:layout_width="688px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-292px"
+                 android:gravity="center_vertical"
+                android:spacing="0px"
+               
+                />
+       <!--      <GridView
+                android:id="@+id/Gridview01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="72px"
+                android:layout_marginLeft="-55px"
+                android:numColumns="7"
+                android:fadingEdge="horizontal"
+                android:gravity="center_vertical"
+                android:padding="0px"
+                android:stretchMode="none" /> -->
+        </RelativeLayout>
+       
+     <!--     <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/frameseekbar_small_relativelayout"
+            android:layout_width="432px"
+            android:layout_height="68px"
+            android:background="@drawable/top_thum_base"
+            android:layout_marginLeft="22px"
+            android:paddingBottom="10px"
+            android:paddingLeft="34px"
+            android:paddingRight="38px"
+            android:paddingTop="10px" >
+            <GridView
+                android:id="@+id/Gridview01"
+                android:layout_width="360px"
+                android:layout_height="48px"
+                android:columnWidth="72px"
+                android:gravity="left"
+                android:horizontalSpacing="0px"
+                android:numColumns="5"
+                android:stretchMode="columnWidth" />
+        </RelativeLayout> -->
+  <!--        放置那个大的framegrid -->
+            <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="98px"
+        android:background="@drawable/gallery_video_frame_select_base_portrait"
+         android:layout_marginTop="62px"
+        android:paddingBottom="33px"
+        android:paddingLeft="29px"
+        android:paddingRight="35px"
+        android:paddingTop="10px" >
+
+        <GridView
+            android:id="@+id/Gridview02"
+            android:layout_width="415px"
+            android:layout_height="match_parent"
+            android:columnWidth="83px"
+            android:gravity="left"
+            android:horizontalSpacing="0px"
+            android:numColumns="5"
+             android:fadingEdge="horizontal"
+            android:stretchMode="columnWidth" />
+    </RelativeLayout>
+    
+                
+   <!--   放置进度条 -->
+            <SeekBar
+        android:id="@+id/progress_frameseekbar"
+        android:layout_marginTop="56px"
+         android:paddingLeft="30px"
+        android:layout_width="445px"
+        android:layout_height="88px"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@layout/videoviewer_frameseekbar_layer"
+        android:thumb="@drawable/scrolling_bar_normal" />
+        <!--      放置时间 -->
+         <TextView
+            android:id="@+id/video_during_frameseekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23px"
+            android:layout_marginBottom="8px"
+            android:textSize="16px"
+            android:text="00:00/00:00" />
+        
+    </RelativeLayout>  
+          
+          
+    </RelativeLayout>
+
+<!--存放菜单的layout  -->
+ <RelativeLayout 
+        android:id="@+id/MenuLayout"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        >
+  <RelativeLayout 
+        android:id="@+id/moreMenuLayout"
+        android:visibility="invisible"
+        android:layout_width="400dp"
+    	android:layout_height="410dp"
+    	 android:layout_alignParentRight="true"
+    	 android:layout_marginTop="78px"
+     	android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+		android:paddingBottom="15dp"  
+		android:background="@drawable/main_menu_window_portrait"
+        >
+        
+    
+        <TextView 
+        android:id="@+id/listtitle"
+        android:layout_width="fill_parent"
+    	android:layout_height="50dp"
+    	android:gravity="center"
+    	android:textSize="20sp"
+    	android:text="@string/gallery_menu_item_more"
+            />
+    
+      <ListView
+        android:id="@+id/moreListView"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:layout_below="@+id/listtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:padding="0dp"
+        android:background="@drawable/menu_bg_transparent_selector"
+        />
+        
+        <!--子菜单  -->
+        
+          <RelativeLayout 
+        android:id="@+id/subMenuLayout"
+        android:layout_width="300dp"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_below="@+id/listtitle"
+        >
+  
+        
+        <ListView
+        android:id="@+id/subListView"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:layout_below="@+id/listtitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="50dp"
+		android:paddingBottom="20dp"
+		android:paddingRight="15dp"  
+        android:background="@drawable/main_menu_window_portrait"
+        />
+              <TextView 
+        android:id="@+id/subListTitle"
+        android:layout_width="300dp"
+    	android:layout_height="50dp"
+    	android:gravity="center"
+    	android:textSize="20sp"
+            />
+        
+  </RelativeLayout>
+ </RelativeLayout>        
+</RelativeLayout>
+    <!--用来放置弹出项  -->  
+    <RelativeLayout
+        android:id="@+id/popup_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+    </RelativeLayout>
+</RelativeLayout>

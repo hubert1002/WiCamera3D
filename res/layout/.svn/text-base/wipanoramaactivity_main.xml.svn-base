@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/imageviewer_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<!-- 第一层，预览的surfaceview -->
+    <RelativeLayout
+        android:id="@+id/surfaceview_relativelayout"
+        android:layout_centerInParent="true"  
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+         	<SurfaceView android:id="@+id/surface"
+    android:layout_centerInParent="true"     	    
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+  	>
+  	</SurfaceView>
+    </RelativeLayout>
+<!-- 第二层，控件层 -->
+       <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/control_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView1"
+        android:layout_width="640dip"
+        android:layout_height="200dip"
+        />
+    <!-- 放置进度条和左右指示器 -->
+        <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/panoprogress_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+           android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip">
+        <ImageView
+               android:id="@+id/panoprogressleft"
+               android:layout_width="wrap_content"
+            android:layout_height="43px" 
+               android:background="@drawable/l_arrow_disappear"
+               android:layout_toLeftOf="@+id/panoramaprogressIndicator"
+                android:layout_marginRight="10px"
+            />
+    
+         <com.wistron.WiCamera.WiPanorama.PanoramaProgressIndicator
+            android:id="@+id/panoramaprogressIndicator"
+            android:layout_centerInParent="true"
+            android:layout_width="400px"
+            android:layout_height="50px" />
+          <ImageView
+                 android:id="@+id/panoprogressright"
+                 android:layout_width="wrap_content"
+                 android:layout_height="43px" 
+                 android:background="@drawable/r_arrow_disappear"
+                 android:layout_toRightOf="@+id/panoramaprogressIndicator"
+                 android:layout_marginLeft="10px"
+            />
+         
+         
+         </RelativeLayout>
+        <TextView
+            android:id="@+id/shenma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+ />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:background="@drawable/panorama_stop_click"
+ />
+    </RelativeLayout>
+    
+           
+           
+           
+    <!-- review的布局 -->
+    <RelativeLayout
+        android:id="@+id/al_camera_review_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/al_camera_review_ui_wiimageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+    >
+   </RelativeLayout>
+        <ToggleButton
+            android:id="@+id/btn_camera_review_delete"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="353px"
+            android:layout_marginTop="5px"
+            android:layout_x="300dip"
+            android:layout_y="20dip"
+            android:background="@drawable/delete_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_review_share"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="253px"
+            android:layout_marginTop="5px"
+            android:layout_x="350dip"
+            android:layout_y="20dip"
+            android:background="@drawable/share_btn_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <ToggleButton
+            android:id="@+id/btn_camera_review_information"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="151px"
+            android:layout_marginTop="5px"
+            android:layout_x="400dip"
+            android:layout_y="20dip"
+            android:background="@drawable/detail_info_btn_selecter"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12dip" />
+
+        <Button
+            android:id="@+id/btn_camera_review_tocamera"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="5px"
+            android:layout_x="450dip"
+            android:layout_y="20dip"
+            android:background="@drawable/camera_btn_selecter"
+            android:textSize="12dip" />
+
+        <Button
+            android:id="@+id/btn_camera_review_play_video"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerInParent="true"
+            android:layout_x="300dip"
+            android:layout_y="200dip"
+            android:background="@drawable/video_review_icon"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

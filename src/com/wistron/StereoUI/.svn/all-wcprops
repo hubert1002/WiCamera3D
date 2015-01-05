@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/wicameraii/!svn/ver/1767/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI
+END
+MsgBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/wicameraii/!svn/ver/1698/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/MsgBox.java
+END
+CSView.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSView.java
+END
+CSButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSButton.java
+END
+CSSeekBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSSeekBar.java
+END
+CSToggleButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/240/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSToggleButton.java
+END
+CSImageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/237/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSImageView.java
+END
+CSTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSTextView.java
+END
+CaptionsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1157/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CaptionsBean.java
+END
+FileInfoMsgBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1693/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/FileInfoMsgBox.java
+END
+CSCheckBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSCheckBox.java
+END
+CSShareMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/251/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSShareMenu.java
+END
+CSViewGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSViewGroup.java
+END
+CSProgressBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSProgressBar.java
+END
+CSToast.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/wicameraii/!svn/ver/129/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSToast.java
+END
+CSRadioButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/129/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSRadioButton.java
+END
+CaptionsResolve.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/wicameraii/!svn/ver/1767/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CaptionsResolve.java
+END
+CSMessageBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSMessageBox.java
+END
+CSMsgBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/wicameraii/!svn/ver/129/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSMsgBox.java
+END
+CSGallery.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/wicameraii/!svn/ver/580/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSGallery.java
+END
+CSGalleryAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/wicameraii/!svn/ver/580/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSGalleryAdapter.java
+END
+ShareMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/1713/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/ShareMenu.java
+END
+CSMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/wicameraii/!svn/ver/259/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/CSMenu.java
+END
+SlideButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1759/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StereoUI/SlideButton.java
+END

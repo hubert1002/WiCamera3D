@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/wicameraii/!svn/ver/1871/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera
+END
+BatteryReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/wicameraii/!svn/ver/1802/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/BatteryReceiver.java
+END
+OperationFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/OperationFile.java
+END
+VideoSurfaceView2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/VideoSurfaceView2D.java
+END
+ArcSeekBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/1359/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/ArcSeekBar.java
+END
+WiCameraActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/wicameraii/!svn/ver/1872/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiCameraActivity.java
+END
+GetGPSInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/907/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/GetGPSInfo.java
+END
+SoundPlayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/SoundPlayer.java
+END
+OverView.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/OverView.java
+END
+SDCardBroadcastReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/wicameraii/!svn/ver/511/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/SDCardBroadcastReceiver.java
+END
+VideoSurfaceView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/VideoSurfaceView.java
+END
+WiCamcorderActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/271/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/WiCamcorderActivity.java
+END
+MainListViewAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/wicameraii/!svn/ver/1764/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/MainListViewAdapter.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/wicameraii/!svn/ver/1696/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/Util.java
+END
+AuxiliaryLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1117/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/AuxiliaryLine.java
+END
+FaceIndicater.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1731/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/FaceIndicater.java
+END
+SubListViewAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/1119/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/SubListViewAdapter.java
+END
+CameraView.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/CameraView.java
+END
+InterSurfaceView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/InterSurfaceView.java
+END
+CameraHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/CameraHolder.java
+END
+StoredData.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/1430/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/StoredData.java
+END
+CameraPreview.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1870/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/CameraPreview.java
+END
+SlideButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1522/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/SlideButton.java
+END
+TimeCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1825/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiCamera/TimeCounter.java
+END

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/flashon_btn_click" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/flash_off_btn_normal" android:state_last="true"></item>
+    <item android:drawable="@drawable/flashon_btn_normal"></item>
+
+</selector>

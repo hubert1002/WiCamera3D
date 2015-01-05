@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/wicameraii/!svn/ver/1859/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery
+END
+WiGalleryOpenGLView.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/wicameraii/!svn/ver/1831/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/WiGalleryOpenGLView.java
+END
+StatusInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1797/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/StatusInfo.java
+END
+MsgBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/wicameraii/!svn/ver/1698/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/MsgBox.java
+END
+GroupDataInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1103/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GroupDataInfo.java
+END
+AllocGPS.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/1667/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/AllocGPS.java
+END
+DataManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1682/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/DataManager.java
+END
+NewtonTheory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1687/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/NewtonTheory.java
+END
+ElementGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1855/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/ElementGroup.java
+END
+SCurve.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/wicameraii/!svn/ver/1132/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/SCurve.java
+END
+MultiTempData.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/918/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/MultiTempData.java
+END
+ShareToModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1834/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/ShareToModule.java
+END
+WiGalleryActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/1859/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/WiGalleryActivity.java
+END
+GPSPointInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1615/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GPSPointInfo.java
+END
+WiGalleryInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/844/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/WiGalleryInterface.java
+END
+ResourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/wicameraii/!svn/ver/1548/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/ResourceManager.java
+END
+ElementBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1797/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/ElementBase.java
+END
+ElementList.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1797/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/ElementList.java
+END
+FavoriteDBAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/wicameraii/!svn/ver/946/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/FavoriteDBAdapter.java
+END
+Sphere.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/wicameraii/!svn/ver/1823/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/Sphere.java
+END
+GalleryListViewAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/wicameraii/!svn/ver/1224/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/GalleryListViewAdapter.java
+END
+PhotoCube.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/1295/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/PhotoCube.java
+END
+AsyncFileProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/1846/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/AsyncFileProvider.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/wicameraii/!svn/ver/1487/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/Element.java
+END
+WiGalleryOpenGLRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/wicameraii/!svn/ver/1770/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiGallery/WiGalleryOpenGLRenderer.java
+END

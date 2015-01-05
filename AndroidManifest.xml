@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wistron.swpc.wicamera3dii"
+    android:versionName="v2.00(120713.006)"
+    android:versionCode="1" >
+    <uses-sdk android:minSdkVersion="15"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+         >
+
+        <!-- WiCamcorder -->    
+		<activity android:name="com.wistron.WiCamera.WiCamcorderActivity"
+			android:label="@string/app_name_WiCamcorderActivity" 
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name="com.wistron.WiCamera.WiPanorama.WiPanoramaActivity"
+			android:label="@string/app_name_WiCamcorderActivity" 
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+        <!-- WiImageEditor LAUNCHER-->
+		<activity android:name="com.wistron.WiEditor.WiImageEditorActivity"
+		    android:icon="@drawable/ic_launcher"
+			android:label="@string/app_name_WiImageEditorActivity" 
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:launchMode="standard">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<!-- WiGallery LAUNCHER-->
+		<activity android:name="com.wistron.WiGallery.WiGalleryActivity"
+		    android:icon="@drawable/wigallery_icon"
+			android:label="@string/app_name_WiGalleryActivity" 
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:launchMode="standard"
+			android:configChanges="orientation"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.LAUNCHER" /> 
+			</intent-filter>
+		</activity>
+		
+		<!-- WiImageViewer LAUNCHER-->
+		<activity android:name="com.wistron.WiViewer.WiImageViewerActivity"
+		    android:icon="@drawable/ic_launcher"
+			android:label="@string/app_name_WiImageViewerActivity" 
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:launchMode="standard">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			 	<action android:name="android.intent.action.VIEW" /> 
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="image/*" />
+				<data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:scheme="http" /> 
+            </intent-filter>
+        </activity>
+
+        <!-- WiVideoViewer -->
+        <activity
+            android:name="com.wistron.WiViewer.WiVideoViewerActivity"
+            android:label="@string/app_name_WiVideoViewerActivity"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:scheme="http" />
+			</intent-filter>
+		</activity>
+		
+        <!-- WiPanoramaViewer LAUNCHER-->
+		<activity android:name="com.wistron.WiViewer.Panorama360Activity"
+			android:label="@string/app_name_Panorama360Activity" 
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<data android:mimeType="image/*" />
+				<data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+		
+		<!-- WiCamera LAUNCHER-->
+        <activity android:name="com.wistron.WiCamera.WiCameraActivity"
+            android:icon="@drawable/wicamera_icon_2"
+            android:label="@string/app_name_WiCameraActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+            </intent-filter>
+        </activity>
+        <!-- WiCamera LAUNCHER-->
+        <activity android:name="com.wistron.WiCamera.CameraPreview"
+            android:label="@string/app_name_WiCameraActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+    <!-- 添加权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/wicameraii/!svn/ver/1274/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper
+END
+JPEGExif.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/171/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper/JPEGExif.java
+END
+MPOFileStreamParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/wicameraii/!svn/ver/1274/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper/MPOFileStreamParser.java
+END
+MPOExifInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/wicameraii/!svn/ver/900/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper/MPOExifInterface.java
+END
+BaselineUtls.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/wicameraii/!svn/ver/171/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper/BaselineUtls.java
+END
+MPOHexTAG.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/822/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper/MPOHexTAG.java
+END
+IFDInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/wicameraii/!svn/ver/171/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/StreamHelper/IFDInfo.java
+END

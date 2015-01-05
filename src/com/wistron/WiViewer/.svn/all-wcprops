@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/wicameraii/!svn/ver/1855/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer
+END
+FileOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/453/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/FileOperation.java
+END
+LoadVideoFrameTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/wicameraii/!svn/ver/1330/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/LoadVideoFrameTask.java
+END
+Panorama360Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/wicameraii/!svn/ver/1781/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/Panorama360Activity.java
+END
+WiVideoViewerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/wicameraii/!svn/ver/1842/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/WiVideoViewerActivity.java
+END
+VideoViewerStateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/wicameraii/!svn/ver/1501/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/VideoViewerStateInfo.java
+END
+LoadImageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1722/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/LoadImageTask.java
+END
+MyVideoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1523/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/MyVideoView.java
+END
+TDStaticData.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/429/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/TDStaticData.java
+END
+WiImageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/wicameraii/!svn/ver/1714/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/WiImageView.java
+END
+MediaFilePicker.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/wicameraii/!svn/ver/1855/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/MediaFilePicker.java
+END
+Video2DService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1587/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/Video2DService.java
+END
+Video3DService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1587/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/Video3DService.java
+END
+OperateBitmaps.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/wicameraii/!svn/ver/1703/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/OperateBitmaps.java
+END
+VideoProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1330/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/VideoProvider.java
+END
+ImageViewerStateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/wicameraii/!svn/ver/1626/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/ImageViewerStateInfo.java
+END
+WiImageViewerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/wicameraii/!svn/ver/1849/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/WiImageViewerActivity.java
+END
+VideoFrameAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/wicameraii/!svn/ver/1818/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/VideoFrameAdapter.java
+END
+VideoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/1437/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/VideoInfo.java
+END
+ImageInfoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/wicameraii/!svn/ver/1632/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/ImageInfoBean.java
+END
+VersionedGestureDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/wicameraii/!svn/ver/1330/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/VersionedGestureDetector.java
+END
+VideoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1680/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/VideoService.java
+END
+PanoramaView.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/wicameraii/!svn/ver/1781/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/PanoramaView.java
+END
+ImageInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/wicameraii/!svn/ver/1444/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/ImageInfo.java
+END
+ViewerListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/wicameraii/!svn/ver/1375/2-DevelopLib/24-Code/WiCamera3DII/src/com/wistron/WiViewer/ViewerListAdapter.java
+END
